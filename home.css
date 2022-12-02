@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif TC', serif;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 22px;
+    color: #465b82;
+    margin: 15px 0 20px 0;
+}
+
+body {
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 3%;
+    background: #586f7c;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top:0; left:0;
+    z-index: 100;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+#navbar {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    padding: 15px 30px;
+    list-style: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+#navbar li a:hover{
+    color: #fff;
+    font-size: 20px;
+}
+
+#navbar li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin-top: 2px;
+    transition: .4s ;
+}
+
+#navbar li a:hover::after{
+    width: 100%;
+}
+
+#header .icons i{
+    margin-right: 12px;
+    color: #fff;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+
+#header .icons i:hover{
+    color: black;
+    font-size: 25px;
+}
+
+#mobile{
+    display: none;
+}
+
+#ad {
+    background-image: url(/images/model7.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#ad .slogan{
+    position: relative;
+    top: 30%; right: 2%;
+    text-align: right;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+#ad .title{
+    margin-top: -40px;
+}
+
+#product {
+    background-color: #fff;
+    padding: 5% 20px 5% 20px;
+    width: 100%;
+    height: 625px;
+    margin: auto;
+}
+
+#product .title {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 0px;
+}
+
+#product .title p{
+    font-weight: 600;
+}
+
+#product .container{
+    margin-top: -10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#product .container .cartBtn{
+    position: relative;
+    top: 150px;
+}
+
+#product .container .cartBtn i{
+    font-size: 25px;
+    display: none;
+}
+
+#product .box {
+    flex-basis: 22%;
+    margin-left: 20px;
+    height: 410px;  
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    background-color: #fff;
+    outline-offset: -5px;
+    border-radius: 25px;
+    outline: 0px solid #fff;
+    transition: .5s linear;
+}
+
+#product .box:hover{
+    outline-offset: 5px;
+    outline: 2px solid black;
+}
+
+
+#product .box h3{
+    font-size: 22px;
+}
+
+#product .box p{
+    font-size: 18px;
+    padding: 10px 0;
+    margin: 5px;
+    font-weight: 500;
+    color: #222;
+}
+
+#product .pic{
+    padding: 10px;
+}
+
+#product img {
+    width: 100%;
+    height: 275px;
+    border-radius: 50%;
+}
+
+#product img:hover{
+    cursor: pointer;
+    transition: all .5s linear;
+    opacity: .7;
+}
+
+#product  h3 span{
+    font-size: 14px;
+}
+
+#product h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+#customer{
+    margin: auto;
+    width: 100%;
+    padding: 5% 0 0 0;
+    text-align: center;
+}
+
+#customer .color {
+    background-color: #3d5a80;
+    margin: auto;
+    width: 80%;
+    padding: 5%;
+    border-radius: 20px 20px 5px 5px;
+    height: 850px
+}
+
+#customer .box{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+#customer .profile{
+    text-align: center;
+}
+
+#customer .box img{
+    border-radius: 50%;
+    height: 225px;   
+}
+
+#customer .content{
+    display: inline;
+}
+
+#customer .rvs{
+    flex-direction: row-reverse;
+}
+
+#customer .slip1{
+    position: relative;
+    bottom: 100px; right:0;
+}
+
+#customer .slip2{
+    position: relative;
+    bottom: 200px; right:0;
+}
+
+#customer .content{
+    margin: 20px;
+    background-color: #b7b7a4;
+    padding: 10px 60px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#aboutUs{
+    padding: 5% 0;
+    width: 100%;
+    text-align: center;
+}
+
+#aboutUs .title{
+    text-align: center;
+}
+
+#aboutUs .box{
+    width: 70%;
+    height: 500px;
+    background-color: #586f7c;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    
+}
+
+#aboutUs .box .box2{
+    text-align: center;
+    line-height: 2;
+}
+
+#aboutUs .box .box2 p{
+    color: black;
+    font-size: 22px;
+}
+
+#aboutUs .box .pic1 {
+    height: 400px;
+    position: relative;
+    top:50px;
+    left:-10px;
+}
+
+#aboutUs .box .pic2{
+    height: 350px;
+    position: relative;
+    top: 50px;
+    right:-10px;
+}
+
+#footer {
+    width: 100%;
+    display: flex;
+    background-color: #6c757d;
+    padding: 30px 10%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#footer h3 {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+#footer .part1{
+    flex-basis: 30%;
+}
+
+#footer .part1 li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+#footer .part1 ul li a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+#footer .part2 {
+    flex-basis: 30%;
+}
+
+#footer .part2 input{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    outline: none;
+}
+
+#footer .part2 button{
+    margin-top: 20px;
+    background: transparent;
+    border:  2px solid #fff;
+    border-radius: 30px;
+    padding: 5px 30px;
+    font-size: 15px;
+}
+
+#footer .part3 {
+    flex-basis: 30%;
+}
+
+#footer .part3 p{
+    margin-top: 30px;
+}
+
+#footer .part3 p{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#footer .icons i{
+    margin-right: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+
+
+
+

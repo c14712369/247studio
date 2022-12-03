@@ -1,11 +1,9 @@
-var divs = $('.slogan   '),
-    limit = 300;  /* scrolltop value when opacity should be 0 */
+let loginForm = document.querySelector('.login-form-container');
 
-$(window).on('scroll', function() {
-   var st = $(this).scrollTop();
+document.querySelector('#login-btn').onclick = () =>{
+  loginForm.classList.toggle('active');
+}
 
-   /* avoid unnecessary call to jQuery function */
-   if (st <= limit) {
-     divs.css({ 'opacity' : (1 - st/limit)});
-   }
-});
+document.querySelector('#close-login-btn').onclick = () =>{
+  loginForm.classList.remove('active');
+}

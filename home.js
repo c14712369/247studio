@@ -7,3 +7,11 @@ document.querySelector('#login-btn').onclick = () =>{
 document.querySelector('#close-login-btn').onclick = () =>{
   loginForm.classList.remove('active');
 }
+
+let searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+    navbar.classList.remove('active');
+    cartItem.classList.remove('active');
+}

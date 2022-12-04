@@ -223,7 +223,7 @@ body {
 }
 
 #product {
-    background-color: #b7b7a4;
+    background-color: #a4ac86;
     padding: 3% 20px 3% 20px;
     width: 100%;
     height: 90vh;
@@ -238,7 +238,7 @@ body {
 
 #product .title p{
     font-weight: 600;
-    font-style: 24px;
+    font-size: 24px;
 }
 
 #product .container{
@@ -270,7 +270,7 @@ body {
 
 #product .box:hover{
     border: 1px solid #222;
-    background-color: #e9ecef;
+    background-color: #ced4da;
     transition: .7s linear;
     box-shadow: none;
 }
@@ -319,7 +319,7 @@ body {
     width: 100%;
     padding: 3% 0 0 0;
     text-align: center;
-    background-color: #b6ad90;
+    background-color: #97a97c;
 }
 
 #customer .title {
@@ -378,11 +378,16 @@ body {
 
 #customer .content{
     margin: 20px;
-    background-color: #C7BCA1;
+    background-color: #a5a58d;
     padding: 10px 60px;
     width: 50%;
     border-radius: 10px;
     text-align: left;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+#customer .content p{
+    color: #222;
 }
 
 #aboutUs{
@@ -459,8 +464,9 @@ body {
 
 #footer .part1 ul li a{
     text-decoration: none;
-    color: #fff;
+    color: #465b82;
     letter-spacing: 1.5px;
+    font-weight: 520;
 }
 
 #footer .part2 {
@@ -472,18 +478,24 @@ body {
     text-align: center;
     height: 40px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #222;
     margin-top: 5px;
     outline: none;
+    background-color: #97a97c;
+}
+
+#footer .part2 input::placeholder{
+    color: #fff;
+    font-size: 16px;
 }
 
 #footer .part2 button{
     margin-top: 20px;
     background: transparent;
-    border:  2px solid #fff;
+    border:  1px solid #222;
     border-radius: 30px;
     padding: 5px 30px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #footer .part3 {
@@ -491,20 +503,17 @@ body {
 }
 
 #footer .part3 p{
-    margin-top: 30px;
-}
-
-#footer .part3 p{
     font-size: 18px;
     letter-spacing: 2px;
-    font-weight: 400;
-    color: #fff;
+    font-weight: 530;
+    margin-top: 30px;
+    color: #465b82;
 }
 
 #footer .icons i{
     margin-right: 10px;
     font-size: 20px;
-    color: black;
+    color: #222;
 }
 
 

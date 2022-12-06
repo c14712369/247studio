@@ -236,6 +236,82 @@ body {
     cursor: pointer;
 }
 
+.shopCart {
+    position: fixed;
+    top:12%; right: -100%;
+    background-color: #fff;
+    width: 400px;
+    z-index: 10000;
+    transition: .7s linear;
+}
+
+.shopCart.active{
+    top: 12%; right: 1%;
+}
+
+.shopCart .title h3{
+    padding: 20px 0 0 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.shopCart .boxCon{
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.shopCart .boxCon .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.shopCart img {
+    width: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.shopCart .boxquan{
+    width: 50px;
+    text-align: center;
+}
+
+.shopCart .boxdel{
+    margin-left: 5px;
+}
+
+.shopCart .boxdetail{
+    text-align: center;
+}
+
+.shopCart .total{
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+.shopCart .total p{
+    font-size: 20px;
+    color: red;
+}
+
+.shopCart .cartBuy{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.shopCart Button{
+    text-align: center;
+    padding: 5px 40px;
+    margin-bottom: 20px;
+}
+
+
+
+
 #ad {
     background-image: url(/images/model7.jpg);
     background-size: cover;
@@ -264,7 +340,6 @@ body {
     background-color: #a4ac86;
     padding: 3% 20px 3% 20px;
     width: 100%;
-    height: 90vh;
     margin: auto;
 }
 
@@ -391,13 +466,9 @@ body {
     text-align: center;
 }
 
-#customer .box img{
+#customer img{
     border-radius: 50%;
     height: 225px;   
-}
-
-#customer .content{
-    display: inline;
 }
 
 #customer .rvs{
@@ -422,6 +493,7 @@ body {
     border-radius: 10px;
     text-align: left;
     box-shadow: 5px 5px 10px #888888;
+    display: inline;
 }
 
 #customer .content p{
@@ -441,7 +513,6 @@ body {
 
 #aboutUs .box{
     width: 70%;
-    height: 500px;
     background-color: #bdbd9b;
     margin: auto;
     margin-top: 50px;
@@ -479,14 +550,17 @@ body {
 
 #footer {
     width: 100%;
-    display: flex;
     background-color: #97a97c;
-    padding: 30px 10%;
+    padding: 30px 10% 0px 10%;
+}
+
+#footer .container{
+    display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
-#footer h3 {
+#footer .h3 {
     margin-bottom: 20px;
     font-weight: 500;
 }
@@ -554,7 +628,53 @@ body {
     color: #222;
 }
 
+#footer .copyright{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
 
+@media (max-width:1080px){
+
+    #ad h2{
+        font-size: 40px;
+    }
+
+    #product img {
+        height: 200px;
+    }
+
+    #product .box p{
+        font-size: 16px;
+    }
+
+    #customer img {
+        height: 150px;
+    }
+
+    #customer .content{
+        padding: 5px 40px;
+    }
+
+    #customer .content p {
+        font-size: 16px;
+    }
+
+    #aboutUs .box .box2 p{
+        font-size: 18px;
+    }
+
+    #aboutUs .box .pic1 {
+        height: 250px;
+    }
+
+    #aboutUs .box .pic2 {
+        height: 220px;
+    }
+
+    
+}
 
 
 

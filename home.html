@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>247Studio</title>
     <link rel="stylesheet" href="/home.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="icon" href="/images/247Studio.ico.ico">
     <script src="https://kit.fontawesome.com/2f0592b59f.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -30,7 +31,7 @@
         <div class="icons">
             <a href="#"><i class="fas fa-user" id="login-btn"></i></a></li>
             <a href="#"><i class="fas fa-search" id="search-btn"></i></a></li>
-            <a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <a><i class="fas fa-shopping-cart" id="homeCart"></i></a></li>
         </div>
 
         <div class="search-form">
@@ -62,6 +63,39 @@
             <p>還沒有帳號 ? <a href="#">立即註冊</a></p>
         </form>
     
+    </div>
+
+    <div class="shopCart">
+
+        <div class="title">
+            <h3>您的購物車裡目前有</h3>
+        </div>
+
+        <div class="boxCon">
+
+            <div class="box">
+                <img src="/images/model18.jpg" alt="">
+
+                <div class="boxdetail">
+                    <div class="name">手提包</div>
+                    <div class="price">$680</div>
+                </div>
+
+                <input type="number" value="1" class="boxquan">
+
+                <i class="fas fa-trash boxdel"></i>
+            </div>
+
+        </div>
+
+        <div class="total">
+            <p>總金額為：<em>$0</em></p>
+        </div>
+
+        <div class="cartBuy">
+            <button type="button" >結帳</button>
+        </div>
+
     </div>
     
     <section id="ad">
@@ -195,36 +229,44 @@
 
     <section id="footer">
 
-        <div class="part1">
-            <h3>或許您會再用到這些連結...</h3>
+            <div class="container">
 
-            <ul>
-                <li><a href="#header">主頁</a></li>
-                <li><a href="#product">主打商品</a></li>
-                <li><a href="#customer">顧客回饋</a></li>
-                <li><a href="#aboutUs">關於我們</a></li>
-            </ul>
-          
-        </div>
+                <div class="part1">
+                    <h3>或許您會再用到這些連結...</h3>
+        
+                    <ul>
+                        <li><a href="#header">主頁</a></li>
+                        <li><a href="#product">主打商品</a></li>
+                        <li><a href="#customer">顧客回饋</a></li>
+                        <li><a href="#aboutUs">關於我們</a></li>
+                    </ul>
+                  
+                </div>
+        
+                <div class="part2">
+                    <h3>成為我們的會員！</h3>
+                    <form action="">
+                        <input type="email" placeholder="請輸入您的電子郵件" required><br>
+                        <button type="submit">立即註冊</button>
+                    </form>
+                </div>
+        
+                <div class="part3">
+                    <h3>聯絡資訊</h3>
+                    <p>新北市,幸福區,安康路二段,520巷<br>5弄20號之1樓</p>
+                    <div class="icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
 
-        <div class="part2">
-            <h3>成為我們的會員！</h3>
-            <form action="">
-                <input type="email" placeholder="請輸入您的電子郵件" required><br>
-                <button type="submit">立即註冊</button>
-            </form>
-        </div>
-
-        <div class="part3">
-            <h3>聯絡資訊</h3>
-            <p>新北市,幸福區,安康路二段,520巷<br>5弄20號之1樓</p>
-            <div class="icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-        </div>
 
+            <div class="copyright">
+                Copyright © 2022 YuHan. All rights reserved.
+            </div>
+            
     </section>
 
     <script src="/home.js"></script>

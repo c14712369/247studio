@@ -84,6 +84,10 @@ body {
     width: 100%;
 }
 
+.homeCart{
+    cursor: pointer;
+}
+
 #header .icons i{
     margin-right: 12px;
     color: #fff;
@@ -260,7 +264,7 @@ body {
     padding: 0 10px;
 }
 
-.shopCart .boxCon .box{
+.shopCart .boxCon .cartbox{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -275,7 +279,7 @@ body {
     padding: 10px;
 }
 
-.shopCart .boxquan{
+.shopCart .quantity{
     width: 50px;
     text-align: center;
 }
@@ -284,7 +288,7 @@ body {
     margin-left: 5px;
 }
 
-.shopCart .boxdetail{
+.shopCart .priceDetail{
     text-align: center;
 }
 

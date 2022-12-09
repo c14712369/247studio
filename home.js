@@ -111,8 +111,8 @@ function addItemToCart(title, price, imageSrc) {
       <div class="cart-quantity cart-column">
           <input class="cart-quantity-input" type="number" value="1">
       </div>
-      <div class="cart-quantity cart-column">
-          <button class="btn btn-danger" type="button">REMOVE</button>
+      <div class="cart-quantity btn-column">
+          <button class="btn-danger" type="button">刪除</button>
       </div>
       `
   cartRow.innerHTML = cartRowContents
@@ -122,7 +122,7 @@ function addItemToCart(title, price, imageSrc) {
 }
 
 function updateCartTotal() {
-  var cartItemContainer = document.getElementsByClassName('cartBoxCon')[0]
+  var cartItemContainer = document.getElementsByClassName('cart-items')[0]
   var cartRows = cartItemContainer.getElementsByClassName('cart-row')
   var total = 0
   
@@ -133,8 +133,35 @@ function updateCartTotal() {
       var price = parseFloat(priceElement.innerText.replace('$', ''))
       var quantity = quantityElement.value
       total = total + (price * quantity)
-  }
+    }
+
+    total = Math.round(total * 100) / 100
   
-  total = Math.round(total * 100) / 100
-  document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+
+//customer animation 
+
+var scrollTOP = document.body.scrollHeight;
+var color = document.querySelector('.color');
+var feedback1 =document.getElementById('feedback1');
+var feedback2 =document.getElementById('feedback2');
+var feedback3 =document.getElementById('feedback3');
+
+if (scrollTOP > 1500){
+  color.style.opacity = 1
+  feedback1.style.width="50%"
+  feedback1.style.marginLeft="20px"
+}
+s
+if (scrollTOP > 1700){
+  color.style.opacity = 1
+  feedback2.style.width="50%"
+  feedback2.style.marginRight="20px"
+}
+
+if (scrollTOP > 1900){
+  color.style.opacity = 1
+  feedback3.style.width="50%"
+  feedback3.style.marginLeft="20px"
 }

@@ -248,6 +248,9 @@ body {
     z-index: 10000;
     transition: .7s linear;
     text-align: center;
+    overflow: scroll;
+    height: 500px;
+    padding: 20px 0;
 }
 
 .shopCart.active{
@@ -308,10 +311,8 @@ body {
     text-align: center;
 }
 
-.shopCart Button{
-    text-align: center;
-    padding: 5px 40px;
-    margin-bottom: 20px;
+.shopCart .cartTitle {
+    margin-bottom: 10px;
 }
 
 .cart-column {
@@ -356,12 +357,53 @@ body {
 
 .cart-quantity-input {
     text-align: center;
-    width: 50px
+    width: 30px
 }
 
-.btn-danger {
+.btn-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.btn-danger{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: #889696;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.btn-danger:hover{
+    cursor: pointer;
+}
+
+.btn-purchase{
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
     background-color: #465b82;
-    height: 30px;
+}
+
+.btn-purchase:hover{
+    cursor: pointer;
+}
+
+.cart-total{
+    padding: 20px;
+    font-size: 22px;
+    color: red;
+}
+
+.cart-total strong{
+    font-size: 16px;
+    color: #222;
 }
 
 
@@ -441,9 +483,11 @@ body {
     padding: 0;
     border-radius: 20px 20px 5px 5px;
     height: 750px;
+    opacity: 0.1;
+    transition: all 3s linear;
 }
 
-#customer .box{
+#customer .cus{
     width: 100%;
     height: 300px;
     display: flex;
@@ -452,11 +496,16 @@ body {
 
 #customer .profile{
     text-align: center;
+    z-index: 21;
 }
 
 #customer img{
     border-radius: 50%;
     height: 225px;   
+}
+
+#customer p {
+    color: #222;
 }
 
 #customer .rvs{
@@ -476,16 +525,29 @@ body {
 #customer .content{
     margin: 20px;
     background-color: #a5a58d;
-    padding: 10px 60px;
+    padding: 10px 40px;
     width: 50%;
     border-radius: 10px;
     text-align: left;
     box-shadow: 5px 5px 10px #888888;
     display: inline;
+    transition: all 1.5s linear;
+    margin-left: -100px;
+    z-index: 20;
 }
 
-#customer .content p{
-    color: #222;
+#customer .contentRvs{
+    margin: 20px;
+    background-color: #a5a58d;
+    padding: 10px 40px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 5px 5px 10px #888888;
+    display: inline;
+    transition: all 3s linear;
+    margin-right: -70px;
+    z-index: 20;
 }
 
 #aboutUs{
@@ -623,46 +685,17 @@ body {
     text-align: center;
 }
 
-@media (max-width:1080px){
-
-    #ad h2{
-        font-size: 40px;
-    }
-
-    #product img {
+@media (min-width:1024px){
+    
+    #product .shop-item-image{
         height: 200px;
     }
 
-    #product .box p{
+    #product .shop-item p{
         font-size: 16px;
     }
-
-    #customer img {
-        height: 150px;
-    }
-
-    #customer .content{
-        padding: 5px 40px;
-    }
-
-    #customer .content p {
-        font-size: 16px;
-    }
-
-    #aboutUs .box .box2 p{
-        font-size: 18px;
-    }
-
-    #aboutUs .box .pic1 {
-        height: 250px;
-    }
-
-    #aboutUs .box .pic2 {
-        height: 220px;
-    }
-
-    
 }
+
 
 
 

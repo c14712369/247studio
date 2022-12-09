@@ -59,7 +59,7 @@ body {
 
 #navbar li a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     color: #fff;
     transition: all .5s ease;
@@ -408,7 +408,7 @@ body {
 
 
 #ad {
-    background-image: url(/images/pic1Clip.png);
+    background-image: url(/images/pic1New.jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -432,7 +432,7 @@ body {
 }
 
 #product {
-    padding: 5% 0 5% 0;
+    padding: 3% 0 3% 0;
     background-color: #e0e2db;
 }
 
@@ -444,23 +444,58 @@ body {
 #product .shop-items {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
 }
 
 #product .shop-item {
     text-align: center;
-    flex-basis: 20%;
+    flex-basis: 25%;
+    margin-bottom: 30px;
 }
 
+.shop-item-title {
+    font-size: 22px;
+}
+
+#product .shop-items .shop-item .shop-item-content{
+    font-size: 18px;
+}
+
+#product .shop-items .shop-item .shop-item-price{
+    font-size: 20px;
+    color: red;
+}
+
+#product .shop-items .shop-item .shop-item-details span{
+    font-size: 16px;
+    color: #222;
+}
+
+
+
 #product .shop-item-image{
-    height: 350px;
-    width: 100%;
+    width: 60%;
     border-radius: 50%;
+}
+
+.shop-item-button{
+    padding: 10px 30px;
+    border:none;
+    border-radius: 10px;
+    background-color: #465b82;
+    color: #fff;
+}
+
+.shop-item-button:hover{
+    cursor: pointer;
 }
 
 #customer{
     margin: auto;
     width: 100%;
-    padding: 3% 0 0 0;
+    padding: 3% 0 5% 0;
     text-align: center;
     background-color: #d2d4c8;
 }
@@ -479,7 +514,8 @@ body {
 
 #customer .color {
     margin: auto;
-    width: 70%;
+    width: 100%;
+    max-width: 1200px;
     padding: 0;
     border-radius: 20px 20px 5px 5px;
     height: 750px;
@@ -514,12 +550,12 @@ body {
 
 #customer .slip1{
     position: relative;
-    bottom: 100px; right:0;
+    bottom: 50px; right:0;
 }
 
 #customer .slip2{
     position: relative;
-    bottom: 200px; right:0;
+    bottom: 100px; right:0;
 }
 
 #customer .content{
@@ -563,6 +599,7 @@ body {
 
 #aboutUs .box{
     width: 70%;
+    max-width: 1400px;
     background-color: #bdbd9b;
     margin: auto;
     margin-top: 50px;

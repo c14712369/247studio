@@ -153,7 +153,7 @@ if (scrollTOP > 1500){
   feedback1.style.width="50%"
   feedback1.style.marginLeft="20px"
 }
-s
+
 if (scrollTOP > 1700){
   color.style.opacity = 1
   feedback2.style.width="50%"

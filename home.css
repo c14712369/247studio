@@ -100,7 +100,7 @@ body {
     font-size: 25px;
 }
 
-#mobile{
+#rwdMenu{
     display: none;
 }
 
@@ -537,7 +537,6 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 #customer .profile{
@@ -579,7 +578,7 @@ body {
     margin: 20px;
     background-color: #a5a58d;
     padding: 10px 60px;
-    flex-basis: 60%;
+    flex-basis: 50%;
     border-radius: 10px;
     text-align: left;
     box-shadow: 5px 5px 10px #888888;
@@ -594,7 +593,7 @@ body {
     margin: 20px;
     background-color: #a5a58d;
     padding: 10px 60px;
-    width: 50%;
+    flex-basis: 45%;
     border-radius: 10px;
     text-align: right;
     box-shadow: 5px 5px 10px #888888;
@@ -645,7 +644,6 @@ body {
 #aboutUs .box .box2{
     text-align: center;
     line-height: 2;
-    flex-basis:  20%;
 }
 
 #aboutUs .box .box2 p{
@@ -810,6 +808,12 @@ body {
 
 }
 
+@media (max-width:790px){
+
+    
+
+}
+
 @media (max-width:768px){
 
     #ad {
@@ -822,6 +826,10 @@ body {
     
     #product .shop-item {
         flex-basis: 40%;
+    }
+
+    #aboutUs .box .box2 p{
+        font-size: 14px;
     }
 
 }
@@ -860,9 +868,9 @@ body {
     #product .shop-item {
         flex-basis: 70%;
     }
-
-    #customer .title h2{
-        font-size: 36px;
+    
+    #customer .color{
+        width: 90%;
     }
 
     #customer .title p{
@@ -871,26 +879,8 @@ body {
         letter-spacing: 5px;
     }
 
-}
-
-@media (max-width:375px){
-
-    #ad h2 {
-        font-size: 22px;
-        letter-spacing: 1px;
-    }
-
-    #product h2 {
-        font-size: 36px;
-    }
-
-    #product .title-p{
-        padding: 0 10;
-        font-size: 16px;
-    }
-
-    #product .shop-item {
-        flex-basis: 60%;
+    #customer .title h2{
+        font-size: 30px;
     }
 
     #customer .content{
@@ -918,8 +908,70 @@ body {
         font-size: 10px;
     }
 
+}
+
+@media (max-width:375px){
+
+    #ad h2 {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    #product h2 {
+        font-size: 30px;
+    }
+
+    #product .title-p{
+        padding: 0 10;
+        font-size: 16px;
+    }
+
+    #product .shop-item {
+        flex-basis: 60%;
+    }
+
+    #customer .title h2{
+        font-size: 30px;
+    }
+
+    #customer .content{
+        flex-basis: 80%;
+        padding: 0 10px;
+    }
+
+    #customer .contentRvs{
+        flex-basis: 60%;
+        letter-spacing: 1px;
+        padding: 0px 10px;
+        margin: 0px;
+    }
+
+    #customer .contentRvs p {
+        font-size: 12px;
+    }
+
+    #customer .color .cus .profile h3{
+        font-size: 10px;
+    }
+
     #aboutUs h2{
-        font-size: 36px;
+        font-size: 30px;
+    }
+
+    #aboutUs .box {
+        width: 90%;
+    }
+
+    #aboutUs .box .box2{
+        flex-basis:  100%;
+    }
+
+    #aboutUs .box .box1{
+        display: none;
+    }
+
+    #aboutUs .box .box3{
+        display: none;
     }
 
 }

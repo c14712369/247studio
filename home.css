@@ -529,26 +529,32 @@ body {
     max-width: 1200px;
     padding: 0;
     border-radius: 20px 20px 5px 5px;
-    height: 750px;
     opacity: 0.1;
     transition: all 3s linear;
 }
 
 #customer .cus{
     width: 100%;
-    height: 300px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #customer .profile{
     text-align: center;
     z-index: 21;
+    flex-basis: 20%;
+}
+
+#customer .cusPic{
+    height: 100%;
+    width: 100%;
 }
 
 #customer img{
-    border-radius: 50%;
-    height: 225px;   
+    border-radius: 50%; 
+    height: 100%;
+    width: 100%;
 }
 
 #customer p {
@@ -561,19 +567,19 @@ body {
 
 #customer .slip1{
     position: relative;
-    bottom: 50px; right:0;
+    bottom: 5%; right:0;
 }
 
 #customer .slip2{
     position: relative;
-    bottom: 100px; right:0;
+    bottom: 5%; right:0;
 }
 
 #customer .content{
     margin: 20px;
     background-color: #a5a58d;
-    padding: 10px 40px;
-    width: 50%;
+    padding: 10px 60px;
+    flex-basis: 60%;
     border-radius: 10px;
     text-align: left;
     box-shadow: 5px 5px 10px #888888;
@@ -581,20 +587,23 @@ body {
     transition: all 1.5s linear;
     margin-left: -100px;
     z-index: 20;
+    letter-spacing: 3px;
 }
 
 #customer .contentRvs{
     margin: 20px;
     background-color: #a5a58d;
-    padding: 10px 40px;
+    padding: 10px 60px;
     width: 50%;
     border-radius: 10px;
-    text-align: left;
+    text-align: right;
     box-shadow: 5px 5px 10px #888888;
     display: inline;
-    transition: all 3s linear;
+    transition: all 1.5s linear;
     margin-right: -70px;
     z-index: 20;
+    letter-spacing: 3px;
+
 }
 
 #aboutUs{
@@ -609,7 +618,7 @@ body {
 }
 
 #aboutUs .box{
-    width: 70%;
+    width: 80%;
     max-width: 1400px;
     background-color: #bdbd9b;
     margin: auto;
@@ -619,12 +628,24 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 25px;
-    
+}
+
+#aboutUs .box1 {
+    flex-basis: 20%;
+}
+
+#aboutUs .box2{
+    flex-basis:  60%;
+}
+
+#aboutUs .box3{
+    flex-basis:  20%;
 }
 
 #aboutUs .box .box2{
     text-align: center;
     line-height: 2;
+    flex-basis:  20%;
 }
 
 #aboutUs .box .box2 p{
@@ -633,14 +654,16 @@ body {
 }
 
 #aboutUs .box .pic1 {
-    height: 400px;
+    height: 100%;
+    max-width: 100%;
     position: relative;
     top:50px;
     left:-10px;
 }
 
 #aboutUs .box .pic2{
-    height: 350px;
+    height: 100%;
+    max-width: 100%;
     position: relative;
     top: 50px;
     right:-10px;
@@ -789,6 +812,10 @@ body {
 
 @media (max-width:768px){
 
+    #ad {
+        height: 70vh;
+    }
+
     #product .shop-items {
         flex-wrap: wrap;
     }
@@ -802,9 +829,7 @@ body {
 @media (max-width:425px){
 
     #ad {
-        background-size: cover;
         height: 50vh;
-        width: 100%;
     }
 
     #ad .slogan{
@@ -815,12 +840,17 @@ body {
 
     #ad h2 {
         font-size: 28px;
+        letter-spacing: 2px;
     }
     
+    #product .section-header{
+        font-size: 36px;
+    }
+
     #product .title-p {
         line-height: 2;
         letter-spacing: 5px;
-        padding: 0 10px;
+        font-size: 16px;
     }
 
     #product .shop-items {
@@ -831,9 +861,24 @@ body {
         flex-basis: 70%;
     }
 
+    #customer .title h2{
+        font-size: 36px;
+    }
+
+    #customer .title p{
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 5px;
+    }
+
 }
 
 @media (max-width:375px){
+
+    #ad h2 {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
 
     #product h2 {
         font-size: 36px;
@@ -846,6 +891,35 @@ body {
 
     #product .shop-item {
         flex-basis: 60%;
+    }
+
+    #customer .content{
+        flex-basis: 70%;
+        letter-spacing: 1px;
+        padding: 0 10px;
+    }
+
+    #customer .content p {
+        font-size: 12px;
+    }
+
+    #customer .contentRvs{
+        flex-basis: 60%;
+        letter-spacing: 1px;
+        padding: 0px 15px;
+        margin: 0px;
+    }
+
+    #customer .contentRvs p {
+        font-size: 12px;
+    }
+
+    #customer .color .cus .profile h3{
+        font-size: 10px;
+    }
+
+    #aboutUs h2{
+        font-size: 36px;
     }
 
 }

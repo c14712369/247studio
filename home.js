@@ -140,6 +140,18 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
 
+// rwdMenu
+
+let navbar = document.getElementById('navbar');
+
+var rwdMenu = document.getElementById('rwdMenu');
+
+rwdMenu.onclick = () =>{
+  navbar.classList.toggle('active')
+}
+
+
+
 //customer animation 
 
 var scrollTOP = document.body.scrollHeight;

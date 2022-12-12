@@ -147,11 +147,11 @@ body {
     align-items: center;
     justify-content: center;
     background:rgba(255,255,255,.9);
-    position:fixed;
-    top:-200%; right:0;
+    position:absolute;
+    top:-100%; left:0;
     z-index: 10000;
     height:100%;
-    width:100%;
+    width:100vh;
     transition:  .3s linear;
 }
 
@@ -163,7 +163,7 @@ body {
     background:#97a97c;
     border:0.5px solid black;
     border-radius: 20px;
-    width:40rem;
+    width: 30%;
     padding:2rem;
     box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: .5rem;
@@ -242,9 +242,9 @@ body {
 
 .shopCart {
     position: fixed;
-    top:12%; right: -100%;
+    top:12%; right: -200%;
     background-color: #fff;
-    width: 500px;
+    width: 30%;
     z-index: 10000;
     transition: .7s linear;
     text-align: center;
@@ -768,6 +768,10 @@ body {
         font-size: 20px;
     }
 
+    .login-form-container form{
+        width: 40%;
+    }
+
 }
 
 @media (max-width:1180px){
@@ -778,6 +782,14 @@ body {
 
     #product .shop-item {
         flex-basis: 34%;
+    }
+
+    .login-form-container form{
+        width: 40%;
+    }
+
+    .login-form-container{
+        width: 100%;
     }
 
 }
@@ -806,11 +818,42 @@ body {
         font-size: 16px;
     }
 
+    .login-form-container form{
+        width: 50%;
+    }
+
 }
 
 @media (max-width:790px){
 
+    #rwdMenu{
+        display: inline-block;
+    }
     
+    #navbar {
+        position: absolute;
+        top: 100%; right: -100%;
+        width: 40%;
+        height: 40vh;
+        padding: 2rem 0.5rem;
+        display: block;
+        text-align: center;
+        background-color: #465b82;
+    }
+    
+    #navbar li{
+        padding: 10px 0px;
+    }
+    
+    #navbar ul li a {
+        margin: 20px;
+        padding: 0px 10px;
+    }
+
+    #navbar.active {
+        right: 0;
+        transition: .3s all linear;
+    }
 
 }
 
@@ -832,9 +875,39 @@ body {
         font-size: 14px;
     }
 
+    .login-form-container{
+        height: 100vh;
+        width: 100%;
+    }
+
 }
 
 @media (max-width:425px){
+
+    .login-form-container form{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .login-form-container form h3{
+        font-size: 1.5rem;
+    }
+
+    .login-form-container form span{
+        font-size: 1.4rem;
+    }
+
+    .login-form-container form .box{
+        padding: 10px 5px;
+    }
+
+    .login-form-container form p{
+        font-size: 1.2rem;
+    }
+
+    .login-form-container form .signBtn{
+        margin: 10px 0;
+    }
 
     #ad {
         height: 50vh;
@@ -940,7 +1013,7 @@ body {
     }
 
     #customer .contentRvs{
-        flex-basis: 60%;
+        flex-basis: 70%;
         letter-spacing: 1px;
         padding: 0px 10px;
         margin: 0px;
@@ -972,6 +1045,10 @@ body {
 
     #aboutUs .box .box3{
         display: none;
+    }
+
+    #navbar {
+        height: 60vh;
     }
 
 }

@@ -17,7 +17,16 @@ let searchForm = document.querySelector('.search-form');
 document.querySelector('#search-btn').onclick = () =>{
     searchForm.classList.toggle('active');
     navbar.classList.remove('active');
-    cartItem.classList.remove('active');
+}
+
+// rwdMenu
+
+let navbar = document.getElementById('navbar');
+
+var rwdMenu = document.getElementById('rwdMenu');
+
+rwdMenu.onclick = () =>{
+  navbar.classList.toggle('active')
 }
 
 // shopCart
@@ -27,6 +36,11 @@ let shopCart = document.querySelector('.shopCart');
 document.querySelector('#homeCart').onclick = () =>{
   shopCart.classList.toggle('active');
 }
+
+shopCart.addEventListener('onclick',function(event){
+  
+},false)
+
 
 // shopCart working
 
@@ -104,7 +118,7 @@ function addItemToCart(title, price, imageSrc) {
   }
   var cartRowContents = `
       <div class="cart-item cart-column">
-          <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+          <img class="cart-item-image" src="${imageSrc}">
           <span class="cart-item-title">${title}</span>
       </div>
       <span class="cart-price cart-column">${price}</span>
@@ -139,18 +153,6 @@ function updateCartTotal() {
   
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
-
-// rwdMenu
-
-let navbar = document.getElementById('navbar');
-
-var rwdMenu = document.getElementById('rwdMenu');
-
-rwdMenu.onclick = () =>{
-  navbar.classList.toggle('active')
-}
-
-
 
 //customer animation 
 

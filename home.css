@@ -608,7 +608,7 @@ body {
 }
 
 #aboutUs{
-    padding: 3% 0 5% 0;
+    padding: 3% 0 3% 0;
     width: 100%;
     text-align: center;
     background-color: #b8bdb5;
@@ -620,10 +620,9 @@ body {
 
 #aboutUs .box{
     width: 80%;
+    margin: auto;
     max-width: 1400px;
     background-color: #bdbd9b;
-    margin: auto;
-    margin-top: 50px;
     display: flex;
     border-radius: 20px;
     justify-content: space-between;
@@ -672,10 +671,11 @@ body {
 #footer {
     width: 100%;
     background-color: #889696;
-    padding: 30px 10% 0px 10%;
+    padding: 30px 20px;
 }
 
 #footer .container{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -687,7 +687,11 @@ body {
 }
 
 #footer .part1{
-    flex-basis: 30%;
+    flex-basis: 33%;
+}
+
+#footer .part1 ul{
+    margin-top: 20px;
 }
 
 #footer .part1 li{
@@ -703,7 +707,7 @@ body {
 }
 
 #footer .part2 {
-    flex-basis: 30%;
+    flex-basis: 33%;
 }
 
 #footer .part2 input{
@@ -712,9 +716,9 @@ body {
     height: 40px;
     border-radius: 5px;
     border: 1px solid #222;
-    margin-top: 5px;
+    margin-top: 30px;
     outline: none;
-    background-color: #97a97c;
+    background-color: #64748b;
 }
 
 #footer .part2 input::placeholder{
@@ -732,14 +736,14 @@ body {
 }
 
 #footer .part3 {
-    flex-basis: 30%;
+    flex-basis: 33%;
 }
 
 #footer .part3 p{
     font-size: 18px;
     letter-spacing: 2px;
     font-weight: 530;
-    margin-top: 30px;
+    margin-top: 20px;
     color: #465b82;
 }
 
@@ -865,7 +869,7 @@ body {
 
     #ad .slogan{
         position: relative;
-        top: 45%; left: 3%;
+        top: 50%; left: 3%;
         text-align: left;
     }
 
@@ -887,6 +891,14 @@ body {
 
     .login-form-container form{
         width: 50%;
+    }
+
+    #customer .content{
+        padding: 10px 50px;
+    }
+
+    #customer .contentRvs {
+        padding: 10px 40px;
     }
 
 }
@@ -1010,7 +1022,7 @@ body {
     }
 
     #aboutUs .box .box2 p{
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     .login-form-container{
@@ -1030,6 +1042,14 @@ body {
     #customer .contentRvs{
         flex-basis: 60%;
         padding: 10px 40px;
+    }
+
+    #footer .part3 p {
+        font-size: 1rem;
+    }
+
+    #footer h3{
+        font-size: 1.1rem;
     }
 
 }
@@ -1140,6 +1160,52 @@ body {
 
     #customer .color .cus .profile h3{
         font-size: 10px;
+    }
+
+    #aboutUs h2 {
+        font-size: 30px;
+    }
+
+    #aboutUs .box1{
+        display: none;
+    }
+    #aboutUs .box3{
+        display: none;
+    }
+
+    #aboutUs .box2{
+        flex-basis: 100%;
+    }
+
+    #aboutUs .box .box2 p{
+        font-size: 14px;
+    }
+
+    #footer .container{
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+    }
+
+    #footer h3 {
+        font-size: 1rem;
+    }
+
+    #footer .part1{
+        flex-basis: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    #footer .part2{
+        flex-basis: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    #footer .part3{
+        flex-basis: 80%;
+        margin: auto;
     }
 
 }

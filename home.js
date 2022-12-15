@@ -125,7 +125,7 @@ function addItemToCart(title, price, imageSrc) {
       <div class="cart-quantity cart-column">
           <input class="cart-quantity-input" type="number" value="1">
       </div>
-      <div class="cart-quantity btn-column">
+      <div class="cart-quantity cart-columnBtn">
           <button class="btn-danger" type="button">刪除</button>
       </div>
       `
